@@ -7,6 +7,7 @@ void main(){
   List<double> nota_matematica_list = [];
   List<double> nota_biologia_list = [];
   List<double> nota_historia_list = [];
+  List<double> media_aluno_list = [];
 
   print("Calculo de média entre 4 componentes dos alunos e se foram reprovados ou aprovados!!");
 
@@ -14,11 +15,6 @@ void main(){
   print("Quanto(s) estudante(s) você ira informar?");
   String? quantidade_de_alunos = stdin.readLineSync();
   int qtd_alunos = int.parse("$quantidade_de_alunos");
-
-  // //Vai perguntar quantos componentes tem
-  // print("Quantidade de componentes a ser calculado:");
-  // String? quantidade_de_componentes = stdin.readLineSync();
-  // int qtd_componentes = int.parse("$quantidade_de_alunos");
 
   //Vai perguntar o nome de cada um dos alunos
   for(int loop1 = 1; loop1 <= qtd_alunos; loop1++){
@@ -48,14 +44,14 @@ void main(){
     nota_historia_list.add(nota_historia_double);
 
     //Vai ativar a função da média
-    calculo_media();
+    calculo_media(media_aluno_list,nome_estudante,nota_portugues_double,nota_matematica_double,nota_biologia_double,nota_historia_double);
   }
-
-
 }
 
-void calculo_media(){
-
+//Vou fazer a media das notas do estudante, e adicionar na Lsit
+void calculo_media(media_aluno_list,nome_estudante,nota_portugues_double,nota_matematica_double,nota_biologia_double,nota_historia_double){
+  double media_aluno_double = ((nota_portugues_double+nota_matematica_double+nota_biologia_double+nota_historia_double)/4);
+  media_aluno_list.add(media_aluno_double);
 }
 
 //Desenvolvido pelo João Pedro de Araujo Aguiar - 14 de Março de 2023
