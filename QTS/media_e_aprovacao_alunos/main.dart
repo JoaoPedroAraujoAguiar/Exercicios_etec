@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  //arrays para guardar os nomes dos estudantes e as notas.
+  //Listas para guardar os nomes dos estudantes e as notas.
   List<String> nome_aluno = [];
   List<double> nota_portugues_list = [];
   List<double> nota_matematica_list = [];
