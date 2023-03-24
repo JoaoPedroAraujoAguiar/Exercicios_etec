@@ -1,3 +1,5 @@
+//Desenvolvido pelo João Pedro de Araujo Aguiar - 14 de Março de 2023 até 15 de Março de 2023
+
 import 'dart:io';
 
 void main(){
